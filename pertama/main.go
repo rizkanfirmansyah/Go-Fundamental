@@ -69,6 +69,8 @@ func main() {
 	title := "Golang is Programming Language"
 
 	for index, letter := range title {
-		fmt.Println("index : ", index, " letter :", string(letter))
+		if index%2 == 0 {
+			fmt.Println("index : ", index, " letter :", string(letter))
+		}
 	}
 }
