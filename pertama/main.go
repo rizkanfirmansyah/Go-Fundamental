@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // FUNDAMENTAL
 // import (
 // 	"fmt"
@@ -23,3 +25,15 @@ package main
 // 	fmt.Println(number)
 // 	fmt.Println(name)
 // }
+
+// Percabangan
+
+func main() {
+	age := 10
+
+	if age > 10 {
+		fmt.Println("Boleh bermain game")
+	} else {
+		fmt.Println("Tidak Boleh bermain game")
+	}
+}
