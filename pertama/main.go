@@ -28,12 +28,27 @@ import "fmt"
 
 // Percabangan
 
-func main() {
-	age := 10
+// func main() {
+// 	age := 10
 
-	if age > 10 {
-		fmt.Println("Boleh bermain game")
-	} else {
-		fmt.Println("Tidak Boleh bermain game")
+// 	if age > 10 {
+// 		fmt.Println("Boleh bermain game")
+// 	} else {
+// 		fmt.Println("Tidak Boleh bermain game")
+// 	}
+// }
+
+// Percabangan Switch Case
+
+func main() {
+	number := 2
+
+	switch number {
+	case 1:
+		fmt.Println("Satu")
+	case 2:
+		fmt.Println("Dua")
+	case 3:
+		fmt.Println("Tiga")
 	}
 }
