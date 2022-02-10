@@ -40,15 +40,35 @@ import "fmt"
 
 // Percabangan Switch Case
 
-func main() {
-	number := 2
+// func main() {
+// 	number := 2
 
-	switch number {
-	case 1:
-		fmt.Println("Satu")
-	case 2:
-		fmt.Println("Dua")
-	case 3:
-		fmt.Println("Tiga")
+// 	switch number {
+// 	case 1:
+// 		fmt.Println("Satu")
+// 	case 2:
+// 		fmt.Println("Dua")
+// 	case 3:
+// 		fmt.Println("Tiga")
+// 	}
+// }
+
+// Perulangan
+
+func main() {
+	// for i := 0; i < 100; i++ {
+	// 	fmt.Println("Golang : ", i)
+	// }
+
+	// i := 1
+	// for i <= 100 {
+	// 	fmt.Println("Golang : ", i)
+	// 	i++
+	// }
+
+	title := "Golang is Programming Language"
+
+	for index, letter := range title {
+		fmt.Println("index : ", index, " letter :", string(letter))
 	}
 }
