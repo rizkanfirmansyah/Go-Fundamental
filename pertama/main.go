@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // FUNDAMENTAL
 // import (
 // 	"fmt"
@@ -77,29 +75,48 @@ import "fmt"
 
 // Array
 
-func main() {
+// func main() {
 
-	// var languages [5]string
-	// languages[0] = "GO"
-	// languages[1] = "PHP"
-	// languages[2] = "JavaScript"
-	// languages[3] = "Ruby"
-	// languages[4] = "Python"
+// 	var languages [5]string
+// 	languages[0] = "GO"
+// 	languages[1] = "PHP"
+// 	languages[2] = "JavaScript"
+// 	languages[3] = "Ruby"
+// 	languages[4] = "Python"
 
-	languages := [...]string{
-		"Ruby",
-		"PHP",
-		"JavaScript",
-		"GO",
-		"C",
-		"C#",
-	}
+// 	languages := [...]string{
+// 		"Ruby",
+// 		"PHP",
+// 		"JavaScript",
+// 		"GO",
+// 		"C",
+// 		"C#",
+// 	}
 
-	// fmt.Println(languages)
-	// length := len(languages)
-	// fmt.Println(length)
+// 	fmt.Println(languages)
+// 	length := len(languages)
+// 	fmt.Println(length)
 
-	for index, lang := range languages {
-		fmt.Println("Index :", index, " Language :", lang)
-	}
-}
+// 	for index, lang := range languages {
+// 		fmt.Println("Index :", index, " Language :", lang)
+// 	}
+// }
+
+// Slice or Append Array
+// func main() {
+// 	var consoles []string
+
+// 	consoles = append(consoles, "Playstation4")
+// 	consoles = append(consoles, "XBox")
+// 	consoles = append(consoles, "Nintendo")
+
+// 	fmt.Println(consoles)
+
+// 	gamingConsoles := []string{"Playstation4", "Nintendo Switch", "Xbox One"}
+// 	fmt.Println(gamingConsoles)
+
+// 	for _, console := range consoles {
+// 		fmt.Println(console)
+// 	}
+
+// }
