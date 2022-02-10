@@ -55,22 +55,51 @@ import "fmt"
 
 // Perulangan
 
+// func main() {
+// 	for i := 0; i < 100; i++ {
+// 		fmt.Println("Golang : ", i)
+// 	}
+
+// 	i := 1
+// 	for i <= 100 {
+// 		fmt.Println("Golang : ", i)
+// 		i++
+// 	}
+
+// 	title := "Golang is Programming Language"
+
+// 	for index, letter := range title {
+// 		if index%2 == 0 {
+// 			fmt.Println("index : ", index, " letter :", string(letter))
+// 		}
+// 	}
+// }
+
+// Array
+
 func main() {
-	// for i := 0; i < 100; i++ {
-	// 	fmt.Println("Golang : ", i)
-	// }
 
-	// i := 1
-	// for i <= 100 {
-	// 	fmt.Println("Golang : ", i)
-	// 	i++
-	// }
+	// var languages [5]string
+	// languages[0] = "GO"
+	// languages[1] = "PHP"
+	// languages[2] = "JavaScript"
+	// languages[3] = "Ruby"
+	// languages[4] = "Python"
 
-	title := "Golang is Programming Language"
+	languages := [...]string{
+		"Ruby",
+		"PHP",
+		"JavaScript",
+		"GO",
+		"C",
+		"C#",
+	}
 
-	for index, letter := range title {
-		if index%2 == 0 {
-			fmt.Println("index : ", index, " letter :", string(letter))
-		}
+	// fmt.Println(languages)
+	// length := len(languages)
+	// fmt.Println(length)
+
+	for index, lang := range languages {
+		fmt.Println("Index :", index, " Language :", lang)
 	}
 }
