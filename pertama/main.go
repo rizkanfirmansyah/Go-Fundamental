@@ -125,36 +125,50 @@ import "fmt"
 
 // Map
 
+// func main() {
+// var myMap map[string]int
+// myMap = map[string]int{}
+
+// myMap["Ruby"] = 9
+// myMap["Go"] = 9
+// myMap["JavaScript"] = 7
+
+// fmt.Println(myMap["Ruby"])
+
+// myMap := map[string]string{
+// 	"Ruby":       "is diamond language",
+// 	"Go":         "is super fast",
+// 	"JavaScript": "is flexible language",
+// }
+
+// value, isAvailable := myMap["python"]
+// fmt.Println(isAvailable)
+// fmt.Println(value)
+
+// for key, value := range myMap {
+// 	fmt.Println("Key : ", key, " Value : ", value)
+// }
+
+// fmt.Println("=============")
+
+// delete(myMap, "Go")
+
+// for key, value := range myMap {
+// 	fmt.Println("Key : ", key, " Value : ", value)
+// }
+
+// }
+
+// Slice of Map
+
 func main() {
-	// var myMap map[string]int
-	// myMap = map[string]int{}
-
-	// myMap["Ruby"] = 9
-	// myMap["Go"] = 9
-	// myMap["JavaScript"] = 7
-
-	// fmt.Println(myMap["Ruby"])
-
-	myMap := map[string]string{
-		"Ruby":       "is diamond language",
-		"Go":         "is super fast",
-		"JavaScript": "is flexible language",
+	students := []map[string]string{
+		{"name": "Rizkan", "score": "A"},
+		{"name": "Ahmad", "score": "B"},
+		{"name": "Zuki", "score": "A"},
 	}
 
-	value, isAvailable := myMap["python"]
-	fmt.Println(isAvailable)
-	fmt.Println(value)
-
-	// for key, value := range myMap {
-	// 	fmt.Println("Key : ", key, " Value : ", value)
-	// }
-
-	// fmt.Println("=============")
-
-	// delete(myMap, "Go")
-
-	// for key, value := range myMap {
-	// 	fmt.Println("Key : ", key, " Value : ", value)
-	// }
-
+	for _, student := range students {
+		fmt.Println(student["name"], " - ", student["score"])
+	}
 }
