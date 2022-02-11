@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // FUNDAMENTAL
 // import (
 // 	"fmt"
@@ -120,3 +122,19 @@ package main
 // 	}
 
 // }
+
+// Map
+
+func main() {
+	// var myMap map[string]int
+	// myMap = map[string]int{}
+
+	// myMap["Ruby"] = 9
+	// myMap["Go"] = 9
+	// myMap["JavaScript"] = 7
+
+	// fmt.Println(myMap["Ruby"])
+
+	myMap := map[string]string{"Ruby": "is diamond language", "Go": "is super fast"}
+	fmt.Println(myMap["Ruby"])
+}
