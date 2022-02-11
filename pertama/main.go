@@ -135,6 +135,26 @@ func main() {
 
 	// fmt.Println(myMap["Ruby"])
 
-	myMap := map[string]string{"Ruby": "is diamond language", "Go": "is super fast"}
-	fmt.Println(myMap["Ruby"])
+	myMap := map[string]string{
+		"Ruby":       "is diamond language",
+		"Go":         "is super fast",
+		"JavaScript": "is flexible language",
+	}
+
+	value, isAvailable := myMap["python"]
+	fmt.Println(isAvailable)
+	fmt.Println(value)
+
+	// for key, value := range myMap {
+	// 	fmt.Println("Key : ", key, " Value : ", value)
+	// }
+
+	// fmt.Println("=============")
+
+	// delete(myMap, "Go")
+
+	// for key, value := range myMap {
+	// 	fmt.Println("Key : ", key, " Value : ", value)
+	// }
+
 }
