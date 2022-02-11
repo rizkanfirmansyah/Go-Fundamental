@@ -10,6 +10,14 @@ type User struct {
 	IsActive  bool
 }
 
+func (user User) display() string {
+	return fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
+}
+
+func displayUser(user User) string {
+	return fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
+}
+
 type Group struct {
 	name        string
 	admin       User
@@ -27,7 +35,11 @@ func main() {
 		IsActive:  true,
 	}
 
+	result := user.display()
+	fmt.Println(result)
+
 	user2 := User{2, "Rizkan", "AF", "rizkan@gmail.com", true}
+	fmt.Println(user2.display())
 	// user.ID = 1
 	// user.FirstName = "Rizkan"
 	// user.LastName = "Firmansyah"
@@ -41,11 +53,11 @@ func main() {
 	// user2.email = "ahmad@gmail.com"
 	// user2.IsActive = true
 
-	users := []User{user, user2}
+	// users := []User{user, user2}
 
-	group := Group{"Gamer", user, users, true}
+	// group := Group{"Gamer", user, users, true}
 
-	displayGroup(group)
+	// displayGroup(group)
 
 }
 
@@ -59,10 +71,4 @@ func displayGroup(group Group) {
 	for _, user := range group.users {
 		fmt.Println(user.FirstName)
 	}
-}
-
-func displayUser(user User) string {
-	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
-
-	return result
 }
