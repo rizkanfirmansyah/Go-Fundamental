@@ -161,14 +161,24 @@ import "fmt"
 
 // Slice of Map
 
-func main() {
-	students := []map[string]string{
-		{"name": "Rizkan", "score": "A"},
-		{"name": "Ahmad", "score": "B"},
-		{"name": "Zuki", "score": "A"},
-	}
+// func main() {
+// 	students := []map[string]string{
+// 		{"name": "Rizkan", "score": "A"},
+// 		{"name": "Ahmad", "score": "B"},
+// 		{"name": "Zuki", "score": "A"},
+// 	}
 
-	for _, student := range students {
-		fmt.Println(student["name"], " - ", student["score"])
-	}
+// 	for _, student := range students {
+// 		fmt.Println(student["name"], " - ", student["score"])
+// 	}
+// }
+
+func main() {
+	sentence := printResult("HAHAHAHAHA")
+	fmt.Println(sentence)
+}
+
+func printResult(sentence string) string {
+	newSentence := sentence + " belajar Golang"
+	return newSentence
 }
