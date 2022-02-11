@@ -34,7 +34,16 @@ func main() {
 	// user2.email = "ahmad@gmail.com"
 	// user2.IsActive = true
 
-	fmt.Println(user)
-	fmt.Println(user2)
+	displayUser1 := displayUser(user)
+	displayUser2 := displayUser(user2)
 
+	fmt.Println(displayUser1)
+	fmt.Println(displayUser2)
+
+}
+
+func displayUser(user User) string {
+	result := fmt.Sprintf("Name : %s %s, Email : %s", user.FirstName, user.LastName, user.email)
+
+	return result
 }
