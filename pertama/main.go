@@ -19,6 +19,8 @@ func main() {
 		email:     "zelda@golang.go",
 		IsActive:  true,
 	}
+
+	user2 := User{2, "Rizkan", "AF", "rizkan@gmail.com", true}
 	// user.ID = 1
 	// user.FirstName = "Rizkan"
 	// user.LastName = "Firmansyah"
@@ -33,5 +35,6 @@ func main() {
 	// user2.IsActive = true
 
 	fmt.Println(user)
+	fmt.Println(user2)
 
 }
