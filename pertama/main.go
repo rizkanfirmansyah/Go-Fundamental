@@ -185,9 +185,9 @@ func main() {
 // 	return newSentence
 // }
 
-func calculate(panjang int, lebar int) (int, int) {
-	luas := panjang * lebar
-	keliling := 2 * (panjang + lebar)
+func calculate(panjang int, lebar int) (luas int, keliling int) {
+	luas = panjang * lebar
+	keliling = 2 * (panjang + lebar)
 
-	return luas, keliling
+	return
 }
