@@ -174,9 +174,10 @@ import "fmt"
 // }
 
 func main() {
-	luas, keliling := calculate(5, 7)
+	// luas, keliling := calculate(5, 7)
+	luas, _ := calculate(5, 7)
 	fmt.Println(luas)
-	fmt.Println(keliling)
+	// fmt.Println(keliling)
 }
 
 // func printResult(sentence string) string {
