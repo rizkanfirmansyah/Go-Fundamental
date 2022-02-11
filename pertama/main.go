@@ -174,11 +174,19 @@ import "fmt"
 // }
 
 func main() {
-	sentence := printResult("HAHAHAHAHA")
-	fmt.Println(sentence)
+	luas, keliling := calculate(5, 7)
+	fmt.Println(luas)
+	fmt.Println(keliling)
 }
 
-func printResult(sentence string) string {
-	newSentence := sentence + " belajar Golang"
-	return newSentence
+// func printResult(sentence string) string {
+// 	newSentence := sentence + " belajar Golang"
+// 	return newSentence
+// }
+
+func calculate(panjang int, lebar int) (int, int) {
+	luas := panjang * lebar
+	keliling := 2 * (panjang + lebar)
+
+	return luas, keliling
 }
