@@ -2,7 +2,22 @@ package main
 
 import "fmt"
 
+type Student struct {
+	ID   int
+	Name string
+	GPA  float32
+}
+
 func main() {
+
+	student := Student{1, "Rizkan Firmansyah", 3.70}
+
+	fmt.Println(student.Name)
+
+	graduate(&student)
+
+	fmt.Println(student.Name)
+
 	// numberA := 5
 	// numberB := &numberA
 
@@ -26,16 +41,20 @@ func main() {
 	// fmt.Println(numberA)
 	// fmt.Println(numberB)
 
-	number := 5
-	fmt.Println("Alamat memory : ", &number)
-	fmt.Println("Nilai awal : ", number)
-	change(&number, 100)
+	// number := 5
+	// fmt.Println("Alamat memory : ", &number)
+	// fmt.Println("Nilai awal : ", number)
+	// change(&number, 100)
 
-	fmt.Println("Nilai akhir : ", number)
+	// fmt.Println("Nilai akhir : ", number)
 }
 
-func change(old *int, new int) {
-	*old = new
-	fmt.Println(old)
-	fmt.Println(old)
+func graduate(student *Student) {
+	student.Name = student.Name + " S.T"
 }
+
+// func change(old *int, new int) {
+// 	*old = new
+// 	fmt.Println(old)
+// 	fmt.Println(old)
+// }
